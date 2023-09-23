@@ -6,15 +6,15 @@ import NumberEntryForm from "./NumberEntryForm";
 import LetterKey from "./LetterKey";
 import Confetti from 'react-confetti'
 
-const LINE_1 = ["MAMA", "UND", "PAPA,"];
-const LINE_2 = ["IHR", "WERDET"];
-const LINE_3 = ["GROSSELTERN!"];
-const LETTERS = ["M", "A", "U", "N", "D", "P", "I", "H", "R", "W", "E", "T", "G", "O", "S", "L"]
+const LINE_1 = ["MOM", "AND", "DAD,",];
+const LINE_2 = ["YOU", "ARE", "GOING"];
+const LINE_3 = ["TO", "BE", "GRANDPARENTS!"];
+const LETTERS = ["M", "O", "A", "N", "D", "Y", "U", "R", "E", "G", "I", "T", "B", "P", "S"]
 
 function solutions(str) {
   let solutions = {};
   for (let i = 1; i <= str.length; i++) {
-    let newNum = 3 * i ** 2 + 19;
+    let newNum = (3 * i) + 19;
     solutions[newNum] = str[i - 1];
   }
   return solutions;
@@ -88,7 +88,7 @@ const GameBoard = ({ setGameStarted }) => {
       <Row className={styles.numberEntry_row}>
         <h2>
           <b>
-            EQUATION: y = 3x<sup>2</sup> + 19
+            EQUATION: y = 3x + 19
           </b>
         </h2>
         <h5>

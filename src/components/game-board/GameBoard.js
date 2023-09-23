@@ -7,9 +7,9 @@ import LetterKey from "./LetterKey";
 import Confetti from 'react-confetti'
 
 const LINE_1 = ["MOM", "AND", "DAD,",];
-const LINE_2 = ["YOU", "ARE", "GOING"];
-const LINE_3 = ["TO", "BE", "GRANDPARENTS!"];
-const LETTERS = ["M", "O", "A", "N", "D", "Y", "U", "R", "E", "G", "I", "T", "B", "P", "S"]
+const LINE_2 = ["YOU", "WILL", "BE"];
+const LINE_3 = ["GRANDPARENTS!"];
+const LETTERS = ["M", "O", "A", "N", "D", "Y", "U", "W", "I", "L", "B", "E", "G", "R", "P", "S"]
 
 function solutions(str) {
   let solutions = {};

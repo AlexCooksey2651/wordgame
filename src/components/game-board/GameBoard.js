@@ -14,7 +14,7 @@ const LETTERS = ["M", "O", "A", "N", "D", "Y", "U", "W", "I", "L", "B", "E", "G"
 function solutions(str) {
   let solutions = {};
   for (let i = 1; i <= str.length; i++) {
-    let newNum = (3 * i) + 19;
+    let newNum = (i**2) + 19;
     solutions[newNum] = str[i - 1];
   }
   return solutions;
@@ -88,7 +88,7 @@ const GameBoard = ({ setGameStarted }) => {
       <Row className={styles.numberEntry_row}>
         <h2>
           <b>
-            EQUATION: y = 3x + 19
+            EQUATION: y = x<sup>2</sup> + 19
           </b>
         </h2>
         <h5>

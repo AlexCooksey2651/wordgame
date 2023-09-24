@@ -11,19 +11,20 @@ const StartGameButton = ({ setGameStarted }) => {
         </Col>
       </Row>
       <br />
-      <br/>
+      <br />
       <Row>
         <Col>
-          <h2>
-            Instructions:
-          </h2>
+          <h2>Instructions:</h2>
           <p className={styles.instructions}>
-          You'll be filling in blanks to complete the sentence,
-            with each blank corresponding to one letter.<br/>To guess letters, you'll need to convert your letter to a number
-            using the provided equation.<br/>To solve the equation, you'll plug in the number of the alphabet
-            that corresponds to the letter (e.g. A = 1, B = 2, etc.).<br/>Once you have that number, use it to solve the equation, then enter
-            the solution in order to guess your original letter.<br/>For example, if you want to guess G, and the equation is y = 2x - 2,
-            you would enter '12' (G is 7<sup>th</sup> letter of the alphabet, so x = 7).
+            Use the provided equation to guess letters to complete the sentence.
+            <br />
+            To guess a letter, let 'x' equal the number of the alphabet that
+            corresponds to the letter (e.g. A = 1, B = 2, etc.). Enter the
+            result ('y') into the box.
+            <br />
+            For example, if the equation is y = 2x - 2 and you want to guess G,
+            x = 7 (G is 7<sup>th</sup> letter of the alphabet) so y = 2 * 7 - 2 = 12, so you would enter
+            '12'.
           </p>
         </Col>
       </Row>
